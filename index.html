@@ -9,6 +9,8 @@
         body {
             background-color: #222831;
             color: white;
+            padding: 0;
+            margin: 0;
         }
 
         th,
@@ -17,7 +19,7 @@
             margin: 0%;
             padding: 0;
             background-color: #0B60B0;
-            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px 5px rgba(90, 148, 235, 0.2);
         }
 
         .th1 {
@@ -27,26 +29,66 @@
 
         .button {
             display: block;
-            
+
             height: 4vh;
-            background-color: #40A2D8;
+            background-color: #3da7e0;
             border: none;
-            border-top: 1px solid white;
             border-bottom: 1px solid white;
             color: white;
             display: flex;
             justify-content: center;
-            /* horizontally center */
             align-items: center;
-            /* vertically center */
-            
             width: 20vh;
-            
-            transition: transform .3s ease-in-out;
+            transition: transform .2s ease-in-out;
+
+            cursor: pointer;
         }
+
+
         .button:hover {
             transform: scale(1.2);
+            background-color: #37b7fc;
+            border: 0;
+            z-index: 1;
         }
+
+        .bottomDiv {
+            background-color: #0B60B0;
+            width: 100vw;
+            padding: 0;
+            position: absolute;
+            bottom: 2vh;
+        }
+
+        .bottomDiv hr {
+            margin: 0;
+            box-shadow: 0 0 10px 5px rgba(90, 148, 235, 0.2);
+        }
+
+        .backCircle {
+            border-radius: 50%;
+            background-color: #40A2D8;
+            position: relative;
+            transform: scale(.4);
+            pointer-events: auto;
+            transition: transform .3s ease-in-out;
+            box-shadow: 0 0 10px 5px rgba(90, 148, 235, 0.2);
+        }
+        .kiddie {
+            height: 50vh; 
+            width: 50vh;
+            transform: scale(2);
+            pointer-events: none;
+            transition: transform .3s ease-in-out;
+            
+        }
+        .backCircle:hover {
+            transform: scale(1);
+        }
+        .backCircle:hover .kiddie {
+            transform: scale(1);
+        }
+        
     </style>
 </head>
 
@@ -56,33 +98,35 @@
         <table>
             <tr>
                 <th class="th1" style="border-top-left-radius: 2vh; border-bottom-left-radius: 2vh;">
-                    <div style="border-radius: 50%; background-color: #40A2D8;">
-                        <img src="kiddie.png" alt="" style="height: 50vh; width: 50vh;">
+                    <div class="backCircle">
+                        <img src="kiddie.png" alt="" class="kiddie">
                     </div>
 
                 </th>
                 <th style="border-top-right-radius: 2vh; border-bottom-right-radius: 2vh;">
-                    <div class="button">
+                    <div class="button" style="border-top: 1px solid white;">
                         Button</div>
-                    <div class="button" style="background-color: #0B60B0;">
+                    <div class="button" style="background-color: #0762b8;">
                         Os Escritores</div>
                     <div class="button">
                         Prosas</div>
-                    <div class="button" style="background-color: #0B60B0;">
+                    <div class="button" style="background-color: #0762b8">
                         Poemas</div>
                     <div class="button">
                         Curisodades</div>
-                    <div class="button" style="background-color: #0B60B0;">
+                    <div class="button" style="background-color: #0762b8">
                         Historórias</div>
                     <div class="button">
                         Provérbios</div>
                 </th>
             </tr>
         </table>
-        <hr>
-        <p>Bem-vindo à página da Turma J do 10º ano do Curso Profissional de Técnico de Multimédia.
-            Diverte-te!!!!</p>
-        <hr>
+        <div class="bottomDiv">
+            <hr>
+            <p>Bem-vindo à página da Turma J do 10º ano do Curso Profissional de Técnico de Multimédia.
+                Diverte-te!!!!</p>
+            <hr>
+        </div>
     </center>
 </body>
 
