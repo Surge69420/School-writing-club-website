@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             background-color: #222831;
             color: white;
             padding: 0;
             margin: 0;
+            font-family: "Montserrat", sans-serif;
+            user-select: none;
         }
 
         th,
@@ -19,7 +25,7 @@
             margin: 0%;
             padding: 0;
             background-color: #0B60B0;
-            box-shadow: 0 0 10px 5px rgba(90, 148, 235, 0.2);
+            box-shadow: 0 0 40px 10px rgba(90, 148, 235, 0.2);
         }
 
         .th1 {
@@ -33,14 +39,14 @@
             height: 4vh;
             background-color: #3da7e0;
             border: none;
-            border-bottom: 1px solid white;
+            
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 20vh;
             transition: transform .2s ease-in-out;
-
+            
             cursor: pointer;
         }
 
@@ -50,25 +56,30 @@
             background-color: #37b7fc;
             border: 0;
             z-index: 1;
+            box-shadow: 0 0 5px 2.5px rgba(90, 148, 235, 0.2);
+            border-radius: .2vw;
         }
+
         .buttonDarkB {
-            background-color: #0762b8;;
+            background-color: #0762b8;
         }
 
         .buttonDarkB:hover {
             background-color: #0266c4;
         }
+
         .bottomDiv {
             background-color: #0B60B0;
             width: 100vw;
             padding: 0;
             position: absolute;
             bottom: 2vh;
+            box-shadow: 0 0 3px 1.5px rgba(90, 148, 235, 0.2);
         }
 
         .bottomDiv hr {
             margin: 0;
-            box-shadow: 0 0 10px 5px rgba(90, 148, 235, 0.2);
+            
         }
 
         .backCircle {
@@ -80,21 +91,23 @@
             transition: transform .3s ease-in-out;
             box-shadow: 0 0 10px 5px rgba(90, 148, 235, 0.2);
         }
+
         .kiddie {
-            height: 50vh; 
+            height: 50vh;
             width: 50vh;
             transform: scale(2);
             pointer-events: none;
             transition: transform .3s ease-in-out;
-            
+
         }
+
         .backCircle:hover {
             transform: scale(1);
         }
+
         .backCircle:hover .kiddie {
             transform: scale(1);
         }
-        
     </style>
 </head>
 
@@ -110,17 +123,17 @@
 
                 </th>
                 <th style="border-top-right-radius: 2vh; border-bottom-right-radius: 2vh;">
-                    <div class="button" style="border-top: 1px solid white;">
+                    <div class="button">
                         Button</div>
-                    <div class="button buttonDarkB" >
+                    <div class="button buttonDarkB">
                         Os Escritores</div>
-                    <div class="button ">
+                    <div class="button">
                         Prosas</div>
-                    <div class="button buttonDarkB" >
+                    <div class="button buttonDarkB">
                         Poemas</div>
                     <div class="button">
                         Curisodades</div>
-                    <div class="button buttonDarkB" >
+                    <div class="button buttonDarkB">
                         Historórias</div>
                     <div class="button">
                         Provérbios</div>
