@@ -6,17 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing Club</title>
     <style>
-        table {
-            border-collapse: collapse;
+        body {
+            background-color: #222831;
+            color: white;
         }
 
         th,
         td {
-            border: 1px solid black;
+
+            margin: 0%;
+            padding: 0;
+            background-color: #0B60B0;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
         }
 
-        th {
+        .th1 {
             padding: 3vw;
+
+        }
+
+        .button {
+            display: block;
+            
+            height: 4vh;
+            background-color: #40A2D8;
+            border: none;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            color: white;
+            display: flex;
+            justify-content: center;
+            /* horizontally center */
+            align-items: center;
+            /* vertically center */
+            
+            width: 20vh;
+
         }
     </style>
 </head>
@@ -26,17 +51,27 @@
         <h1>Amigos Da Escrita</h1>
         <table>
             <tr>
-                <th>
-                    <img src="kiddie.png" alt="" style="height: 50vh; width: 50vh;">
+                <th class="th1" style="border-top-left-radius: 2vh; border-bottom-left-radius: 2vh;">
+                    <div style="border-radius: 50%; background-color: #40A2D8;">
+                        <img src="kiddie.png" alt="" style="height: 50vh; width: 50vh;">
+                    </div>
+
                 </th>
-                <th>
-                    <a href="http://www.apescritores.pt/">Os Escritores</a>
-                    <br>
-                    <p>Prosas</p>
-                    <a href="poemas.html">Poemas</a>
-                    <p>Curisodades</p>
-                    <p>Histórias</p>
-                    <p>Provérbios</p>
+                <th style="border-top-right-radius: 2vh; border-bottom-right-radius: 2vh;">
+                    <div class="button">
+                        Button</div>
+                    <div class="button" style="background-color: #0B60B0;">
+                        Os Escritores</div>
+                    <div class="button">
+                        Prosas</div>
+                    <div class="button" style="background-color: #0B60B0;">
+                        Poemas</div>
+                    <div class="button">
+                        Curisodades</div>
+                    <div class="button" style="background-color: #0B60B0;">
+                        Historórias</div>
+                    <div class="button">
+                        Provérbios</div>
                 </th>
             </tr>
         </table>
