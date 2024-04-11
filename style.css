@@ -56,18 +56,15 @@ td {
 
 .button {
     display: block;
-
     height: 4vh;
     background-color: #3da7e0;
     border: none;
-    
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20vh;
     transition: transform .2s ease-in-out;
-    
     cursor: pointer;
 }
 
@@ -128,4 +125,13 @@ td {
 
 .backCircle:hover .kiddie {
     transform: scale(1);
+}
+.divbackdrop {
+    margin: 0%;
+    padding: 0;
+    background-color: #0B60B0;
+    box-shadow: 0 0 40px 10px rgba(90, 148, 235, 0.2);
+    display: inline-block;
+    border-radius: 2vh;
+    padding: 3vw;
 }
