@@ -16,3 +16,12 @@ if (document.getElementById("back") != null) {
         }, 1000);
     })
 }
+if (document.getElementById("Escritores") != null) {
+    document.getElementById("Escritores").addEventListener("click", () => {
+        document.getElementById('coverwholescreenUn').classList.add('coverwholescreen');
+        setTimeout(function () {
+            // Redirect to a different HTML page
+            window.location.href = 'http://www.apescritores.pt/';
+        }, 1000);
+    })
+}
