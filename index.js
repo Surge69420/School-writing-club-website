@@ -3,7 +3,7 @@ if (document.getElementById("Poemas") != null) {
         document.getElementById('coverwholescreenUn').classList.add('coverwholescreen');
         setTimeout(function () {
             // Redirect to a different HTML page
-            window.location.href = 'Poemas.html';
+            window.location.href = 'poemas.html';
         }, 1000);
     })
 }
