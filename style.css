@@ -78,11 +78,7 @@ td {
     transition: transform .2s ease-in-out;
 }
 
-.buttonH {
-    cursor: pointer;
-    animation: animate1 1s ease-in-out ;
-    animation-delay: 1s;
-}
+
 .buttonH:hover {
     transform: scale(1.2);
     background-color: #37b7fc;
@@ -90,6 +86,11 @@ td {
     z-index: 1;
     box-shadow: 0 0 5px 2.5px rgba(90, 148, 235, 0.2);
     border-radius: .2vw;
+}
+.butano {
+    animation: animate1 1s ease-in-out ;
+    animation-delay: 1s;
+    cursor: pointer;
 }
 @keyframes animate1 {
     0%

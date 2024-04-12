@@ -25,3 +25,12 @@ if (document.getElementById("Escritores") != null) {
         }, 1000);
     })
 }
+setTimeout(() => {
+    var butanoList = document.getElementsByClassName("butano");
+    for (var i = 0; i < butanoList.length; i++) {
+        butanoList[i].classList.add("buttonH");
+        if (butanoList[i].classList.contains("butanoD")) {
+            butanoList[i].classList.add("buttonDarkBH");
+        }
+    }
+}, 2500);
