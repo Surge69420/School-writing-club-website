@@ -80,6 +80,8 @@ td {
 
 .buttonH {
     cursor: pointer;
+    animation: animate1 1s ease-in-out ;
+    animation-delay: 1s;
 }
 .buttonH:hover {
     transform: scale(1.2);
@@ -89,7 +91,25 @@ td {
     box-shadow: 0 0 5px 2.5px rgba(90, 148, 235, 0.2);
     border-radius: .2vw;
 }
-
+@keyframes animate1 {
+    0%
+    {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .buttonDarkB {
     background-color: #0762b8;
 }
