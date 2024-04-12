@@ -88,27 +88,43 @@ td {
     border-radius: .2vw;
 }
 .butano {
-    animation: animate1 1s ease-in-out ;
+    animation: animateButtonBright 1s ease-in-out ;
     animation-delay: 1s;
     cursor: pointer;
 }
-@keyframes animate1 {
-    0%
+.butanoD {
+    animation: animateButtonDark 1s ease-in-out ;
+    animation-delay: 1s;
+    cursor: pointer;
+}
+@keyframes animateButtonBright {
+    0%,50%,100%
     {
         transform: scale(1);
+        
     }
-    25% {
+    25%,75% {
         transform: scale(1.2);
+        background-color: #37b7fc;
+        border: 0;
+        z-index: 1;
+        box-shadow: 0 0 5px 2.5px rgba(90, 148, 235, 0.2);
+        border-radius: .2vw;
     }
-    50%
+}
+@keyframes animateButtonDark {
+    0%,50%,100%
     {
         transform: scale(1);
+        
     }
-    75% {
+    25%,75% {
         transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
+        background-color: #0266c4;
+        border: 0;
+        z-index: 1;
+        box-shadow: 0 0 5px 2.5px rgba(90, 148, 235, 0.2);
+        border-radius: .2vw;
     }
 }
 .buttonDarkB {
